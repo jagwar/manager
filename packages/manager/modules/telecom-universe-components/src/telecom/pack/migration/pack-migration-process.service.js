@@ -161,6 +161,13 @@ export default /* @ngInject */ function($q, OvhApiPackXdsl, Poller) {
       });
     }
 
+    // Set contact phone if is set
+    if (migrationProcess.contactPhone) {
+      assign(postParams, {
+        contactPhone: migrationProcess.contactPhone,
+      });
+    }
+
     return OvhApiPackXdsl.v6().migrate(
       {
         packName: migrationProcess.pack.packName,

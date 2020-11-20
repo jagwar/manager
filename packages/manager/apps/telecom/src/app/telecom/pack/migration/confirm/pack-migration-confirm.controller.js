@@ -24,6 +24,8 @@ export default class TelecomPackMigrationConfirmCtrl {
 
     this.process = this.TucPackMigrationProcess.getMigrationProcess();
     this.choosedAdditionalOptions = this.TucPackMigrationProcess.getOptionsSelected();
+
+    this.contactPhone = '';
   }
 
   /*= ==============================
@@ -59,6 +61,7 @@ export default class TelecomPackMigrationConfirmCtrl {
 
   startMigration() {
     this.loading.migrate = true;
+    this.process.contactPhone = this.contactPhone;
     return this.TucPackMigrationProcess.startMigration()
       .then((migrationTask) => {
         this.process.migrationTaskId = migrationTask.id;

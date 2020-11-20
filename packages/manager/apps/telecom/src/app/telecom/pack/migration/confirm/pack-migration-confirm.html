@@ -162,6 +162,51 @@
     >
         <h2
             class="widget-presentation-title"
+            data-translate="telecom_pack_migration_confirm_resume_contact_owner"
+        ></h2>
+        <div class="d-inline-flex p-2 bd-highlight">
+            <div
+                class="form-group"
+                data-ng-class="{
+                    'has-error': resumeForm.contactPhone.$touched && resumeForm.contactPhone.$invalid
+                }"
+            >
+                <label
+                    for="contactPhone"
+                    class="control-label"
+                    data-translate="telecom_pack_migration_confirm_resume_contact_phone"
+                >
+                </label>
+                <input
+                    type="text"
+                    class="form-control"
+                    id="contactPhone"
+                    name="contactPhone"
+                    data-ui-validate="{ pattern: '$ctrl.checkContactPhone($value)' }"
+                    data-ng-model="$ctrl.contactPhone"
+                />
+                <span
+                    class="help-block"
+                    role="alert"
+                    data-ng-if="resumeForm.contactPhone.$touched"
+                    data-ng-messages="resumeForm.contactPhone.$error"
+                >
+                    <span
+                        data-ng-message="pattern"
+                        data-translate="telecom_pack_migration_confirm_resume_phone_form_error"
+                    >
+                    </span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div
+        class="widget-presentation"
+        data-ng-if="!$ctrl.loading.migrate && $ctrl.process.selectedOffer.totalSubServiceToDelete > 0"
+    >
+        <h2
+            class="widget-presentation-title"
             data-translate="telecom_pack_migration_confirm_service_to_delete_title"
         ></h2>
 
