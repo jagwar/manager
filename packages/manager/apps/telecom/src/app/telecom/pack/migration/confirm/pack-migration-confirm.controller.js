@@ -24,8 +24,6 @@ export default class TelecomPackMigrationConfirmCtrl {
 
     this.process = this.TucPackMigrationProcess.getMigrationProcess();
     this.choosedAdditionalOptions = this.TucPackMigrationProcess.getOptionsSelected();
-
-    this.contactPhone = '';
   }
 
   /*= ==============================
@@ -53,6 +51,17 @@ export default class TelecomPackMigrationConfirmCtrl {
     ).join(', ');
   }
 
+  static checkContactPhone(value) {
+    if (value) {
+      return !!(
+        value.match(/^\+?(\d|\.| |#|-)+$/) &&
+        value.length < 26 &&
+        value.length > 2
+      );
+    }
+    return true;
+  }
+
   /* -----  End of HELPERS  ------*/
 
   /*= ==============================
@@ -61,7 +70,6 @@ export default class TelecomPackMigrationConfirmCtrl {
 
   startMigration() {
     this.loading.migrate = true;
-    this.process.contactPhone = this.contactPhone;
     return this.TucPackMigrationProcess.startMigration()
       .then((migrationTask) => {
         this.process.migrationTaskId = migrationTask.id;

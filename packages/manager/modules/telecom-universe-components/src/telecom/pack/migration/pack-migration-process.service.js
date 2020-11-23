@@ -163,7 +163,7 @@ export default /* @ngInject */ function($q, OvhApiPackXdsl, Poller) {
 
     // Set contact phone if is set
     if (migrationProcess.contactPhone) {
-      assign(postParams, {
+      Object.assign(postParams, {
         contactPhone: migrationProcess.contactPhone,
       });
     }
@@ -343,6 +343,7 @@ export default /* @ngInject */ function($q, OvhApiPackXdsl, Poller) {
       migrationOffers: null,
       currentStep: '',
       selectedOffer: null,
+      contactPhone: null,
     };
     return migrationProcess;
   };
