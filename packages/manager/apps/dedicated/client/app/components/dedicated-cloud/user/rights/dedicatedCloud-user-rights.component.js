@@ -5,6 +5,7 @@ export default {
   bindings: {
     editRight: '<',
     goBack: '<',
+    pccType: '<',
     productId: '<',
     userId: '<',
   },

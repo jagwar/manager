@@ -1,3 +1,115 @@
+# [14.8.0](https://github.com/ovh/manager/compare/@ovh-ux/manager-dedicated@14.7.1...@ovh-ux/manager-dedicated@14.8.0) (2020-11-25)
+
+
+### Bug Fixes
+
+* **account.user.infos:** account birthdate validation ([#4077](https://github.com/ovh/manager/issues/4077)) ([c7b622d](https://github.com/ovh/manager/commit/c7b622d1b9b5528e0e9965edf048b1da98f04912))
+* **chatbot:** add support level ([9fb6854](https://github.com/ovh/manager/commit/9fb6854396cec69872c794faefc3f01dcc0f497e))
+* **dedicated:** filter guides by universe ([#3998](https://github.com/ovh/manager/issues/3998)) ([be72a76](https://github.com/ovh/manager/commit/be72a768215e45bf302238a2c45f78ee24479018))
+* **deps:** upgrade ovh-api-services to v11.0.1 ([#4067](https://github.com/ovh/manager/issues/4067)) ([994f173](https://github.com/ovh/manager/commit/994f173072ab2e6920fa48049d477579f7364657))
+* **i18n:** add missing translations [CDS 674] ([464f1fd](https://github.com/ovh/manager/commit/464f1fd2a6e5a7fb166f71737829a8d040c6675f))
+* **i18n:** add missing translations [CDS 677] ([81ae9b6](https://github.com/ovh/manager/commit/81ae9b6f3c988e6c3458033ed95afb92f1593929))
+* **i18n:** add missing translations [CDS 684] ([a73375e](https://github.com/ovh/manager/commit/a73375e5cdb1ff9a6eae7f2cb820b7c0055886f6))
+* **user-contacts:** not possible to change ldp contact ([bdb1434](https://github.com/ovh/manager/commit/bdb1434bc4000fabd05e34858fcbd01612363f65)), closes [#DTRSD-24621](https://github.com/ovh/manager/issues/DTRSD-24621)
+
+
+### Features
+
+* **dedicated:** add billing autorenew terminate tracking ([fde763e](https://github.com/ovh/manager/commit/fde763e1c3dc212587680eb76326d7f0f12d5e74))
+* **dedicated:** remove auto page tracking on service resiliation ([3acc9cd](https://github.com/ovh/manager/commit/3acc9cd7cd52cc94ac59ae4761a3e5f742a0e073))
+
+
+### Performance Improvements
+
+* **chatbot:** delay the chatbot initialization ([b6f3673](https://github.com/ovh/manager/commit/b6f36737c8c45ecb7c7e58cbe71e45d9660ca389))
+
+
+
+## [14.7.1](https://github.com/ovh/manager/compare/@ovh-ux/manager-dedicated@14.7.0...@ovh-ux/manager-dedicated@14.7.1) (2020-11-18)
+
+
+### Bug Fixes
+
+* **dedicated:** user rights text ([88aba4a](https://github.com/ovh/manager/commit/88aba4aca727b5a0b84c88527f443ff09a5aee46)), closes [#MANAGER-5997](https://github.com/ovh/manager/issues/MANAGER-5997)
+* **i18n:** add missing translations [CDS 670] ([bf33247](https://github.com/ovh/manager/commit/bf332474f5df053b65ddff2505d40636ad1a6967))
+* allow to access sub dashboard states ([#4044](https://github.com/ovh/manager/issues/4044)) ([f2b3d40](https://github.com/ovh/manager/commit/f2b3d40de941e49a4c0f0fa18e1d6829d5ddc76b))
+
+
+
+# [14.7.0](https://github.com/ovh/manager/compare/@ovh-ux/manager-dedicated@14.6.1...@ovh-ux/manager-dedicated@14.7.0) (2020-11-17)
+
+
+### Bug Fixes
+
+* **dedicated:** add commercial name ([2c6db72](https://github.com/ovh/manager/commit/2c6db72e9434de9903e0b63f0074f02a48bb9da8)), closes [#MANAGER-5673](https://github.com/ovh/manager/issues/MANAGER-5673)
+* **dedicated:** add ip ([0e245bb](https://github.com/ovh/manager/commit/0e245bbbb55f8925ce6fc3235809540387ab3658)), closes [#MANAGER-5956](https://github.com/ovh/manager/issues/MANAGER-5956)
+* **dedicated:** backup tariff url ([098ab6b](https://github.com/ovh/manager/commit/098ab6b6911eb9024d45eaedda3bac533347a447)), closes [#MANAGER-5456](https://github.com/ovh/manager/issues/MANAGER-5456)
+* **dedicated:** fix sub type ([7024e8c](https://github.com/ovh/manager/commit/7024e8cc76b7cd662354936e77c56cb2be2129ff)), closes [#MANAGER-5994](https://github.com/ovh/manager/issues/MANAGER-5994)
+* **dedicated:** hide nsx ([59ac919](https://github.com/ovh/manager/commit/59ac91902c4fa395c46fda4345cd5fe418e97984)), closes [#MANAGER-5673](https://github.com/ovh/manager/issues/MANAGER-5673)
+* **dedicated:** pcc delete service ([0c5bce2](https://github.com/ovh/manager/commit/0c5bce2842ec60365a7e08e0f1718bf459a8e9b6)), closes [#MANAGER-5907](https://github.com/ovh/manager/issues/MANAGER-5907)
+* **dedicated:** rename essentials ([468e566](https://github.com/ovh/manager/commit/468e566302b9bb5cd8a79debbc0503e8d4333e50)), closes [#MANAGER-5919](https://github.com/ovh/manager/issues/MANAGER-5919)
+* **dedicated:** spla license ([1c8df1f](https://github.com/ovh/manager/commit/1c8df1f54b2a4ce52f2a31635fa7102c493e1de9)), closes [#MANAGER-5738](https://github.com/ovh/manager/issues/MANAGER-5738)
+* **dedicated:** terminate pcc ([36f0694](https://github.com/ovh/manager/commit/36f069437e9dafc70c107bb370b115e63a57acfa)), closes [#MANAGER-5930](https://github.com/ovh/manager/issues/MANAGER-5930)
+* **dedicated:** text changes ([08c8c1c](https://github.com/ovh/manager/commit/08c8c1ca9c235fb96c456a3a8ecaf9d7c8cb54f8)), closes [#MANAGER-5673](https://github.com/ovh/manager/issues/MANAGER-5673)
+* **dedicated:** update backup links ([8a967f5](https://github.com/ovh/manager/commit/8a967f5dbe610a01a09137e32196d9804df48196)), closes [#MANAGER-5857](https://github.com/ovh/manager/issues/MANAGER-5857)
+* **dedicated-ip:** replace terminate api ([61c0876](https://github.com/ovh/manager/commit/61c08769f37c179c0d3559aa18b5103592d78713)), closes [#MANAGER-5951](https://github.com/ovh/manager/issues/MANAGER-5951)
+* **i18n:** add missing translations [CDS 644] ([d9426c2](https://github.com/ovh/manager/commit/d9426c2de58f544c096f1c58ee6568085b7dae6f))
+* **i18n:** add missing translations [CDS 650] ([6e72d24](https://github.com/ovh/manager/commit/6e72d24aaa5dd085e207e67f8c557b27f2e9e29f))
+* add essentials to billing ([bab2aa6](https://github.com/ovh/manager/commit/bab2aa6ba8f6663bd1d7ffec75123d361b04d18f))
+* add essentials to manage contacts ([7f1b3f0](https://github.com/ovh/manager/commit/7f1b3f0f9d2200136df28440bde59d9193ef0f77))
+
+
+### Features
+
+* add managed baremetal ([71ee67e](https://github.com/ovh/manager/commit/71ee67e667128367f29e0db0d3f15b55be1a8d64)), closes [#MANAGER-5673](https://github.com/ovh/manager/issues/MANAGER-5673)
+
+
+
+## [14.6.1](https://github.com/ovh/manager/compare/@ovh-ux/manager-dedicated@14.6.0...@ovh-ux/manager-dedicated@14.6.1) (2020-11-17)
+
+
+### Bug Fixes
+
+* **dedicated-cloud.datacenter.add:** avoid duplicate naming ([#4033](https://github.com/ovh/manager/issues/4033)) ([adcb73e](https://github.com/ovh/manager/commit/adcb73ecd771ffb09b2d57d7a77d95b48c238726))
+
+
+
+# [14.6.0](https://github.com/ovh/manager/compare/@ovh-ux/manager-dedicated@14.5.1...@ovh-ux/manager-dedicated@14.6.0) (2020-11-16)
+
+
+### Bug Fixes
+
+* **billing:** remove pagination if empty list ([#3984](https://github.com/ovh/manager/issues/3984)) ([ef729d5](https://github.com/ovh/manager/commit/ef729d5102d50b547a970725d7da3dbfd55be0b0))
+* **dedicated:** update translations ([#3980](https://github.com/ovh/manager/issues/3980)) ([fe5d24e](https://github.com/ovh/manager/commit/fe5d24e1c4df5d6b5f421abd70b8458bf6373931))
+* **i18n:** add missing translations [CDS 638] ([2b63404](https://github.com/ovh/manager/commit/2b6340470f11b3a5b019429abbbf3f94ba9c54b3))
+* **i18n:** add missing translations [CDS 639] ([ddb4bd2](https://github.com/ovh/manager/commit/ddb4bd2daec6972c4ac7696aac6541da1d1a3e26))
+* **i18n:** add missing translations [CDS 646] ([2c2e07c](https://github.com/ovh/manager/commit/2c2e07cef0d49428e4957d32cf780cd194e328cb))
+* **i18n:** add missing translations [CDS 649] ([9308a0e](https://github.com/ovh/manager/commit/9308a0eb699768fa9e25a21e349f5db89eb07ac6))
+* **i18n:** add missing translations [CDS 653] ([59a73ea](https://github.com/ovh/manager/commit/59a73ea6c1aefa4fa4b81f1a003a7d0efabc10a4))
+* **i18n:** add missing translations [CDS 655] ([7ee8d0e](https://github.com/ovh/manager/commit/7ee8d0efc0007fecbe8274c46f537a516e41bb16))
+* **i18n:** add missing translations [CDS 656] ([073ee6a](https://github.com/ovh/manager/commit/073ee6aa15fff82a11547a851c8af2c6a5b66a1a))
+* **i18n:** add missing translations [CDS 665] ([72bc72b](https://github.com/ovh/manager/commit/72bc72b6ab934204f4e9c4c76e6c47c15f11281c))
+* **ip:** not possibble to add  mac address ([#4003](https://github.com/ovh/manager/issues/4003)) ([22338c9](https://github.com/ovh/manager/commit/22338c90c57c30f192ee511193fe1c3d3200675b))
+* **models:** add dedicatedCloud class ([1c624c4](https://github.com/ovh/manager/commit/1c624c41f7017ac7a0f031b05f0ed9ea38d256b0))
+* **translations:** clean translations files ([#4008](https://github.com/ovh/manager/issues/4008)) ([3dfc129](https://github.com/ovh/manager/commit/3dfc1296ce2e702b08b1f54c007123ad0c55a53a))
+* **user:** change label for deactivate 2FA codes ([f76d040](https://github.com/ovh/manager/commit/f76d0402f0d7165fa6b867760d734a4ff81c9d9e))
+
+
+### Features
+
+* **dedicated-cloud:** add survey banner ([#4017](https://github.com/ovh/manager/issues/4017)) ([961b2dd](https://github.com/ovh/manager/commit/961b2ddb771dfa8f9f13dfe8905c791a7fc232f2))
+
+
+### Performance Improvements
+
+* lazy load angular-qr dependency ([#3996](https://github.com/ovh/manager/issues/3996)) ([6d5b608](https://github.com/ovh/manager/commit/6d5b608b92608bfb8fa9e164b589bd12a478bb3b))
+* remove full lodash import ([#4007](https://github.com/ovh/manager/issues/4007)) ([9cf553c](https://github.com/ovh/manager/commit/9cf553c7718b51869e3cd0b3057d4f6e762716cf))
+* remove raphael and justgage unused deps ([#3997](https://github.com/ovh/manager/issues/3997)) ([b547a59](https://github.com/ovh/manager/commit/b547a5946dadcee5b5002e2089534387fc0354c9))
+* remove unused ckeditor import ([#3995](https://github.com/ovh/manager/issues/3995)) ([42b1a31](https://github.com/ovh/manager/commit/42b1a31dd836dbcc207ccdfe7fc421fc028e6061))
+* remove unused jquery-cookie dependency ([#4014](https://github.com/ovh/manager/issues/4014)) ([9114662](https://github.com/ovh/manager/commit/9114662d99b4a8d71d8060af7d6d6556dcf0d331))
+
+
+
 ## [14.5.1](https://github.com/ovh/manager/compare/@ovh-ux/manager-dedicated@14.5.0...@ovh-ux/manager-dedicated@14.5.1) (2020-11-09)
 
 

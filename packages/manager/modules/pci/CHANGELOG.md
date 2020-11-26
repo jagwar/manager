@@ -1,3 +1,58 @@
+# [5.4.0](https://github.com/ovh/manager/compare/@ovh-ux/manager-pci@5.3.1...@ovh-ux/manager-pci@5.4.0) (2020-11-25)
+
+
+### Bug Fixes
+
+* **i18n:** add missing translations [CDS 628] ([10a161a](https://github.com/ovh/manager/commit/10a161af128a2888159ef56b8afb8712fb837934))
+* **i18n:** add missing translations [CDS 669] ([25763aa](https://github.com/ovh/manager/commit/25763aa7762be342829829c7243289d48c273a20))
+* **i18n:** add missing translations [CDS 673] ([0e41c30](https://github.com/ovh/manager/commit/0e41c30ddbf6c6547b84c92648ede9a6073168e3))
+* **i18n:** add missing translations [CDS 674] ([464f1fd](https://github.com/ovh/manager/commit/464f1fd2a6e5a7fb166f71737829a8d040c6675f))
+
+
+### Features
+
+* **pci/ai/serving:** add framework and backend selection ([b8ed4cf](https://github.com/ovh/manager/commit/b8ed4cf894a11f241a901d4d54aeb7e18c66b047))
+
+
+
+## [5.3.1](https://github.com/ovh/manager/compare/@ovh-ux/manager-pci@5.3.0...@ovh-ux/manager-pci@5.3.1) (2020-11-17)
+
+
+### Bug Fixes
+
+* **public-cloud:** fix quota error ([#4034](https://github.com/ovh/manager/issues/4034)) ([2824dc1](https://github.com/ovh/manager/commit/2824dc18921c16f0fb8b7103aa5eed0ca60325e8)), closes [#3824](https://github.com/ovh/manager/issues/3824)
+
+
+
+# [5.3.0](https://github.com/ovh/manager/compare/@ovh-ux/manager-pci@5.2.7...@ovh-ux/manager-pci@5.3.0) (2020-11-16)
+
+
+### Bug Fixes
+
+* **i18n:** add missing translations [CDS 654] ([d6d0d1f](https://github.com/ovh/manager/commit/d6d0d1fff030d69cb5e1f49eb58b4d9ec86dc1a6))
+* **i18n:** add missing translations [CDS 660] ([c99b0b9](https://github.com/ovh/manager/commit/c99b0b924a5595b773a9553ec37d9f6bef3e99ed))
+* **kubernetes:** node pool column alignment ([577b94e](https://github.com/ovh/manager/commit/577b94eccab8a0bebbd89c7ab4f1b51642fca8b1))
+* **project.quota.increase-request:** fix quota type id ([#3824](https://github.com/ovh/manager/issues/3824)) ([8bc3ac6](https://github.com/ovh/manager/commit/8bc3ac6440f7cb9d49e02ffd42da5cd21187f4bc))
+* **translations:** clean translations files ([#4008](https://github.com/ovh/manager/issues/4008)) ([3dfc129](https://github.com/ovh/manager/commit/3dfc1296ce2e702b08b1f54c007123ad0c55a53a))
+
+
+### Features
+
+* **pci.kube.node:** activate monthly billing for nodepool creation ([8035399](https://github.com/ovh/manager/commit/8035399a0e09e749decfdd5b5cb104416ad0b376))
+* **pci.kube.nodes:** add monthly billing information column ([3eca9b6](https://github.com/ovh/manager/commit/3eca9b63deedb1a326e5604a765577c11734e4ed))
+* **public-cloud:** kubernetes anti-affinity ([1f3a0ce](https://github.com/ovh/manager/commit/1f3a0ce0755b05802968b3861caebeb450106025)), closes [#MANAGER-5524](https://github.com/ovh/manager/issues/MANAGER-5524)
+
+
+
+## [5.2.7](https://github.com/ovh/manager/compare/@ovh-ux/manager-pci@5.2.6...@ovh-ux/manager-pci@5.2.7) (2020-11-13)
+
+
+### Bug Fixes
+
+* **pci:** add maintenance warning message ([#4018](https://github.com/ovh/manager/issues/4018)) ([8302fd7](https://github.com/ovh/manager/commit/8302fd7831eb012c3ec2be192915ba6998402f57))
+
+
+
 ## [5.2.6](https://github.com/ovh/manager/compare/@ovh-ux/manager-pci@5.2.5...@ovh-ux/manager-pci@5.2.6) (2020-11-09)
 
 

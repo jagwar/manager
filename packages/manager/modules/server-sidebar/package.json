@@ -1,6 +1,6 @@
 {
   "name": "@ovh-ux/manager-server-sidebar",
-  "version": "3.4.0",
+  "version": "3.5.1",
   "private": true,
   "description": "Sidebar component shared across all control panel.",
   "homepage": "https://github.com/ovh/manager/tree/master/packages/manager/modules/server-sidebar#readme",
@@ -32,7 +32,7 @@
     "lodash": "^4.17.15"
   },
   "devDependencies": {
-    "@ovh-ux/component-rollup-config": "^7.0.0",
+    "@ovh-ux/component-rollup-config": "^7.0.0 || ^8.0.0",
     "@ovh-ux/ng-ovh-feature-flipping": "^1.0.0",
     "@ovh-ux/ui-kit": "^4.4.1"
   },

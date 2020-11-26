@@ -1,3 +1,21 @@
+## [3.1.2](https://github.com/ovh/manager/compare/@ovh-ux/manager-pci-app@3.1.1...@ovh-ux/manager-pci-app@3.1.2) (2020-11-25)
+
+
+### Bug Fixes
+
+* **deps:** upgrade ovh-api-services to v11.0.1 ([#4067](https://github.com/ovh/manager/issues/4067)) ([994f173](https://github.com/ovh/manager/commit/994f173072ab2e6920fa48049d477579f7364657))
+
+
+
+## [3.1.1](https://github.com/ovh/manager/compare/@ovh-ux/manager-pci-app@3.1.0...@ovh-ux/manager-pci-app@3.1.1) (2020-11-16)
+
+
+### Bug Fixes
+
+* **deps:** add missing deps ([1e6d9c5](https://github.com/ovh/manager/commit/1e6d9c5d9d3c20fb785dc8f7f0d10507d70918b6))
+
+
+
 # [3.1.0](https://github.com/ovh/manager/compare/@ovh-ux/manager-pci-app@3.0.7...@ovh-ux/manager-pci-app@3.1.0) (2020-10-28)
 
 

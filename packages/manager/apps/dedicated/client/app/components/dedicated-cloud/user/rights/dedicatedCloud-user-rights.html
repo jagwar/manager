@@ -47,7 +47,7 @@
                 ></span>
             </oui-datagrid-column>
             <oui-datagrid-column
-                data-title=":: 'dedicatedCloud_USER_NETWORK_ROLE' | translate"
+                data-title=":: ('dedicatedCloud_USER_NETWORK_ROLE_' + $ctrl.pccType) | translate"
             >
                 <span
                     data-translate="{{ 'dedicatedCloud_USER_right_' + $row.networkRole }}"

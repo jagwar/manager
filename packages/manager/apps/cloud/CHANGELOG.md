@@ -1,3 +1,27 @@
+## [11.0.2](https://github.com/ovh/manager/compare/@ovh-ux/manager-cloud@11.0.1...@ovh-ux/manager-cloud@11.0.2) (2020-11-25)
+
+
+### Bug Fixes
+
+* **chatbot:** add support level ([e305ae0](https://github.com/ovh/manager/commit/e305ae09077f42e2f50cc79e2d456d58a6df7da9))
+* **deps:** upgrade ovh-api-services to v11.0.1 ([#4067](https://github.com/ovh/manager/issues/4067)) ([994f173](https://github.com/ovh/manager/commit/994f173072ab2e6920fa48049d477579f7364657))
+
+
+### Performance Improvements
+
+* **chatbot:** delay the chatbot initialization ([c78e70a](https://github.com/ovh/manager/commit/c78e70a3e80ba359971f2e78b29a53185e3deb64))
+
+
+
+## [11.0.1](https://github.com/ovh/manager/compare/@ovh-ux/manager-cloud@11.0.0...@ovh-ux/manager-cloud@11.0.1) (2020-11-16)
+
+
+### Performance Improvements
+
+* remove unused jquery-cookie dependency ([#4014](https://github.com/ovh/manager/issues/4014)) ([9114662](https://github.com/ovh/manager/commit/9114662d99b4a8d71d8060af7d6d6556dcf0d331))
+
+
+
 # [11.0.0](https://github.com/ovh/manager/compare/@ovh-ux/manager-cloud@10.2.8...@ovh-ux/manager-cloud@11.0.0) (2020-10-28)
 
 

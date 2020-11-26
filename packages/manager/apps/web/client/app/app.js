@@ -83,8 +83,6 @@ angular
       'directives',
       ngQAllSettled,
       'ngMessages',
-      'ngFlash',
-      'vs-repeat',
       'xeditable',
       ngAtInternet,
       ngAtInternetUiRouterPlugin,
@@ -537,6 +535,7 @@ angular
     /* @ngInject */ ($rootScope, $transitions) => {
       const unregisterHook = $transitions.onSuccess({}, () => {
         detachPreloader();
+        $rootScope.$broadcast('app:started');
         unregisterHook();
       });
     },

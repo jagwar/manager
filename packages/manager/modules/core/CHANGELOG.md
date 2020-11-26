@@ -1,3 +1,21 @@
+# [11.1.0](https://github.com/ovh/manager/compare/@ovh-ux/manager-core@11.0.4...@ovh-ux/manager-core@11.1.0) (2020-11-25)
+
+
+### Features
+
+* **environment:** replace api calls by user env ([4d9dd9d](https://github.com/ovh/manager/commit/4d9dd9d229cdd5da219a9ec1602dfa6681615fe6))
+
+
+
+## [11.0.4](https://github.com/ovh/manager/compare/@ovh-ux/manager-core@11.0.3...@ovh-ux/manager-core@11.0.4) (2020-11-17)
+
+
+### Bug Fixes
+
+* **core:** use user class ([91d92ae](https://github.com/ovh/manager/commit/91d92aefd0a8e45183d85c0eea1e5821857cd21a)), closes [#MANAGER-5922](https://github.com/ovh/manager/issues/MANAGER-5922)
+
+
+
 ## [11.0.3](https://github.com/ovh/manager/compare/@ovh-ux/manager-core@11.0.2...@ovh-ux/manager-core@11.0.3) (2020-10-28)
 
 
