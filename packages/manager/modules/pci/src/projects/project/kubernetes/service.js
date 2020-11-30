@@ -1,3 +1,4 @@
+import filter from 'lodash/filter';
 import map from 'lodash/map';
 import set from 'lodash/set';
 import sortBy from 'lodash/sortBy';
@@ -23,6 +24,7 @@ export default class Kubernetes {
     OvhApiCloudProjectKube,
     OvhApiKube,
     OvhApiCloudProjectQuota,
+    OvhApiCloudProjectNetwork,
   ) {
     this.$http = $http;
     this.$q = $q;
@@ -33,6 +35,7 @@ export default class Kubernetes {
     this.OvhApiCloudProjectKube = OvhApiCloudProjectKube;
     this.OvhApiKube = OvhApiKube;
     this.OvhApiCloudProjectQuota = OvhApiCloudProjectQuota;
+    this.OvhApiCloudProjectNetwork = OvhApiCloudProjectNetwork;
   }
 
   isLegacyCluster(serviceName) {
@@ -188,5 +191,18 @@ export default class Kubernetes {
 
   resetInstancesCache() {
     this.OvhApiCloudProjectInstance.v6().resetCache();
+  }
+
+  getPrivateNetworks(projectId) {
+    return this.OvhApiCloudProjectNetwork.Private()
+      .v6()
+      .query({
+        serviceName: projectId,
+      })
+      .$promise.then((networks) =>
+        filter(networks, {
+          type: 'private',
+        }),
+      );
   }
 }

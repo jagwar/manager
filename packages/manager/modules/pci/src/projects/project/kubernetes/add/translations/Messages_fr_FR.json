@@ -10,5 +10,10 @@
   "kubernetes_add_name": "Nom",
   "kubernetes_add_billing_type_description": "Tous les nœuds futurs de ce pool de nœuds se verront appliquer ce mode de facturation. Vous pourrez ultérieurement passer chacun de vos nœuds individuellement de la facturation horaire à mensuelle.",
   "kubernetes_add_billing_type_payment_method": "Vous serez facturé sur votre mode de paiement par défaut",
-  "kubernetes_add_billing_anti_affinity_title": "Facturation et anti-affinité"
+  "kubernetes_add_billing_anti_affinity_title": "Facturation et anti-affinité",
+  "kubernetes_add_private_network": "[Beta] Choisissez un réseau privé pour ce cluster",
+  "kubernetes_add_private_network_label": "Réseau privé attaché",
+  "kubernetes_add_private_network_none": "Aucun",
+  "kubernetes_add_private_network_description": "Par défaut, vos nœuds de travail disposent d'une IPv4 publique. Si vous choisissez un réseau privé, les IP publiques de ces nœuds seront utilisées exclusivement pour leur administration/le lien avec le control plane Kubernetes, et vos noeuds se verront attribuer une IP sur le vLAN du réseau privé choisi.",
+  "kubernetes_add_private_network_add": "Créer un réseau privé"
 }

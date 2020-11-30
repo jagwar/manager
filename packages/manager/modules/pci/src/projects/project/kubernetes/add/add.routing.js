@@ -12,6 +12,12 @@ export default /* @ngInject */ ($stateProvider) => {
             : false,
         ),
     resolve: {
+      privateNetworks: /* @ngInject */ (Kubernetes, projectId) =>
+        Kubernetes.getPrivateNetworks(projectId),
+      addPrivateNetworksLink: /* @ngInject */ ($state, projectId) =>
+        $state.href('pci.projects.project.privateNetwork', {
+          projectId,
+        }),
       quotas: /* @ngInject */ (OvhApiCloudProjectQuota, projectId) =>
         OvhApiCloudProjectQuota.v6().query({ serviceName: projectId }).$promise,
       goBack: /* @ngInject */ (goToKubernetes) => goToKubernetes,
