@@ -160,7 +160,7 @@ export const GUIDES = {
     },
     {
       id: 'quick_start',
-      link: 'https://docs.ovh.com/gb/en/logs-data-platform/',
+      link: 'https://docs.ovh.com/fr/logs-data-platform',
       tracker: 'dbaas::logs::onboarding::go-to-doc',
     },
     {
@@ -228,7 +228,7 @@ export const GUIDES = {
     },
     {
       id: 'quick_start',
-      link: 'https://docs.ovh.com/gb/en/logs-data-platform/',
+      link: 'https://docs.ovh.com/fr/logs-data-platform',
       tracker: 'dbaas::logs::onboarding::go-to-doc',
     },
     {
@@ -245,7 +245,7 @@ export const GUIDES = {
     },
     {
       id: 'quick_start',
-      link: 'https://docs.ovh.com/gb/en/logs-data-platform/',
+      link: 'https://docs.ovh.com/fr/logs-data-platform',
       tracker: 'dbaas::logs::onboarding::go-to-doc',
     },
     {
