@@ -2,20 +2,18 @@ import { Selector, t } from 'testcafe';
 import { getPageUrl } from '../../utils/helpers';
 
 export default class ManagerParentPage {
-  constructor({ currentPageNameInUrl } = {}) {
+  constructor({ currentPageNameInUrl, elementDisplayedOnPage } = {}) {
     this.currentPageNameInUrl = currentPageNameInUrl;
     this.navbarUser = Selector('[data-navi-id="user-menu"]');
     this.logoutLink = Selector('[data-navi-id="logout"]');
+    this.elementDisplayedOnPage = Selector(
+      `[data-navi-id="${elementDisplayedOnPage}"]`,
+    );
   }
 
   async confirmCurrentPage() {
-    for (let i = 0; i < 15; i += 1) {
-      // eslint-disable-next-line no-await-in-loop
-      const currentPage = await getPageUrl();
-      if (currentPage.includes(this.currentPageNameInUrl)) {
-        break;
-      }
-    }
+    await this.elementDisplayedOnPage.with({ visibilityCheck: true })();
+    await t.expect(await getPageUrl()).contains(this.currentPageNameInUrl);
   }
 
   async toggleAccountMenu() {

@@ -3,7 +3,10 @@ import ManagerParentPage from '../common/managerParent';
 
 export default class CatalogPage extends ManagerParentPage {
   constructor() {
-    super({ currentPageNameInUrl: 'catalog' });
+    super({
+      currentPageNameInUrl: 'catalog',
+      elementDisplayedOnPage: 'catalog-title',
+    });
   }
 
   static async accessToOrder(productName) {

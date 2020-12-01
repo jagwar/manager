@@ -3,7 +3,10 @@ import ManagerParentPage from '../common/managerParent';
 
 export default class HubPage extends ManagerParentPage {
   constructor() {
-    super({ currentPageNameInUrl: 'manager/#/' });
+    super({
+      currentPageNameInUrl: '/#/',
+      elementDisplayedOnPage: 'hub-welcome-title',
+    });
     this.paymentStatusBlock = Selector('[data-navi-id="paymentStatus-block"]');
     this.ordersBlock = Selector('[data-navi-id="lastOrder-block"]');
     this.allOrdersList = this.ordersBlock.find(
@@ -27,19 +30,40 @@ export default class HubPage extends ManagerParentPage {
     await t.click(goToRenewLink);
   }
 
-  async selectProductToRenew(product) {
+  async dropdownProductAutomaticRenew(product) {
     const productToSelect = this.paymentStatusBlock.find(
       `[data-navi-id="paymentStatus-${product}"]`,
     );
-    const linkToRenew = Selector(
+    const produtDropdown = Selector(
       `[data-navi-id="paymentStatus-${product}-dropdown"]`,
     );
+    const renewConfigurationLink = Selector(
+      '[data-navi-id="go-to-configure-renew"]',
+    ).getAttribute('href');
+    const anticipatePaymentLink = Selector(
+      '[data-navi-id="go-to-anticipate-payment"]',
+    ).getAttribute('href');
     await t.expect(productToSelect.visible).ok();
-    await t.click(linkToRenew);
+    await t.click(produtDropdown);
+    await t
+      .expect(renewConfigurationLink)
+      .contains(
+        `/manager/dedicated/#/billing/autorenew/update?serviceId=${product}`,
+      );
+    await t
+      .expect(anticipatePaymentLink)
+      .contains(`/cgi-bin/order/renew.cgi?domainChooser=${product}`);
   }
 
   async goToOrdersList() {
     await t.click(this.allOrdersList);
+  }
+
+  async confirmOrdersListLink() {
+    const allOrdersListHref = this.allOrdersList.getAttribute('href');
+    await t
+      .expect(allOrdersListHref)
+      .contains('/manager/dedicated/#/billing/orders');
   }
 
   async goToDocs() {
@@ -50,6 +74,13 @@ export default class HubPage extends ManagerParentPage {
   async goToBills() {
     await t.expect(this.linkToBills.visible).ok();
     await t.click(this.linkToBills);
+  }
+
+  async confirmBillsLink() {
+    const linkToBillsHref = this.linkToBills.getAttribute('href');
+    await t
+      .expect(linkToBillsHref)
+      .contains('manager/dedicated/#/billing/history');
   }
 
   async gotToProductsCatalog() {
